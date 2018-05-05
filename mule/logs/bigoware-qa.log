@@ -1,0 +1,575 @@
+2018-01-16 09:51:22,898 [WrapperListener_start_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'bigoware-qa'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-16 09:51:23,166 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-16 09:51:23,291 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-16 09:51:23,447 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-16 09:51:23,447 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-01-16 09:51:23,509 [WrapperListener_start_runner] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@457ac2aa: startup date [Tue Jan 16 09:51:23 CST 2018]; root of context hierarchy
+2018-01-16 09:51:25,156 [WrapperListener_start_runner] WARN  org.mule.transport.http.builder.HttpHeaderDefinitionParser - Schema warning: Use of element <header> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2018-01-16 09:51:25,613 [WrapperListener_start_runner] INFO  org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 4.0.4.RELEASE
+2018-01-16 09:51:25,620 [WrapperListener_start_runner] WARN  org.springframework.security.core.SpringSecurityCoreVersion - **** You are advised to use Spring 4.2.5.RELEASE or later with this version. You are running: 4.1.9.RELEASE
+2018-01-16 09:51:25,620 [WrapperListener_start_runner] INFO  org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 4.0.4.RELEASE
+2018-01-16 09:51:25,689 [WrapperListener_start_runner] WARN  org.mule.config.spring.util.SpringXMLUtils - Id (_muleSecurityManager) and name (security-manager) differ for mule-ss:security-manager{name=Spring Security Provider, id=_muleSecurityManager, name=security-manager}
+2018-01-16 09:51:25,724 [WrapperListener_start_runner] WARN  org.mule.config.spring.parsers.specific.SecurityFilterDefinitionParser - Schema warning: Use of element <basic-security-filter> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2018-01-16 09:51:26,450 [WrapperListener_start_runner] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-16 09:51:27,769 [WrapperListener_start_runner] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+2018-01-16 09:51:28,815 [WrapperListener_start_runner] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-16 09:51:29,605 [WrapperListener_start_runner] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\bigoware-qa\queue-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\bigoware-qa\queue-tx-log\tx2.log
+2018-01-16 09:51:29,612 [WrapperListener_start_runner] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\bigoware-qa\queue-xa-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\bigoware-qa\queue-xa-tx-log\tx2.log
+2018-01-16 09:51:29,641 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-16 09:51:29,645 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CreateOrder
+2018-01-16 09:51:29,645 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@54cd3db2
+2018-01-16 09:51:29,746 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CreateOrder.stage1
+2018-01-16 09:51:29,919 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CreateCase
+2018-01-16 09:51:29,919 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@22e5cf66
+2018-01-16 09:51:29,925 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CreateCase.stage1
+2018-01-16 09:51:29,927 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncProductCatalog
+2018-01-16 09:51:29,928 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@25edcdec
+2018-01-16 09:51:29,933 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncProductCatalog.stage1
+2018-01-16 09:51:29,934 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1023719854
+2018-01-16 09:51:30,335 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1794684541
+2018-01-16 09:51:30,351 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.829721191
+2018-01-16 09:51:30,420 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncProducts
+2018-01-16 09:51:30,420 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4e7ee62f
+2018-01-16 09:51:30,429 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncProducts.stage1
+2018-01-16 09:51:30,437 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncAccounts
+2018-01-16 09:51:30,438 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@947dc7
+2018-01-16 09:51:30,445 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncAccounts.stage1
+2018-01-16 09:51:30,451 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncUsers
+2018-01-16 09:51:30,451 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@143acb1a
+2018-01-16 09:51:30,455 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncUsers.stage1
+2018-01-16 09:51:30,459 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1295669477
+2018-01-16 09:51:30,546 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncStoreSettings
+2018-01-16 09:51:30,547 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@f983390
+2018-01-16 09:51:30,557 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncStoreSettings.stage1
+2018-01-16 09:51:30,569 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.973840756
+2018-01-16 09:51:30,632 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.681245199
+2018-01-16 09:51:30,746 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1548398318
+2018-01-16 09:51:30,878 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ContinueSyncProducts
+2018-01-16 09:51:30,878 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@70bb575f
+2018-01-16 09:51:30,889 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ContinueSyncProducts.stage1
+2018-01-16 09:51:30,895 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.757880000
+2018-01-16 09:51:30,971 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncPriceBooks
+2018-01-16 09:51:30,971 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5529205a
+2018-01-16 09:51:30,976 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncPriceBooks.stage1
+2018-01-16 09:51:30,977 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncFTPServer
+2018-01-16 09:51:30,977 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38f170dd
+2018-01-16 09:51:30,987 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncFTPServer.stage1
+2018-01-16 09:51:30,989 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: Prueba
+2018-01-16 09:51:30,989 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@c4cce07
+2018-01-16 09:51:30,997 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: Prueba.stage1
+2018-01-16 09:51:30,998 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SendERPOrder
+2018-01-16 09:51:30,998 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@632015cd
+2018-01-16 09:51:31,007 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SendERPOrder.stage1
+2018-01-16 09:51:31,008 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetStockFromProtheus
+2018-01-16 09:51:31,008 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@33abd5f8
+2018-01-16 09:51:31,015 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetStockFromProtheus.stage1
+2018-01-16 09:51:31,016 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ReserveStockInProtheus
+2018-01-16 09:51:31,016 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@649f9c7b
+2018-01-16 09:51:31,023 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ReserveStockInProtheus.stage1
+2018-01-16 09:51:31,024 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CreateBackOrderInProtheus
+2018-01-16 09:51:31,025 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2880f3f4
+2018-01-16 09:51:31,027 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CreateBackOrderInProtheus.stage1
+2018-01-16 09:51:31,027 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncCaseCategories
+2018-01-16 09:51:31,027 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2be28a76
+2018-01-16 09:51:31,029 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncCaseCategories.stage1
+2018-01-16 09:51:31,030 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: OrderHistory
+2018-01-16 09:51:31,030 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3b2d5c0f
+2018-01-16 09:51:31,031 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: OrderHistory.stage1
+2018-01-16 09:51:31,031 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AccountSummary
+2018-01-16 09:51:31,031 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@340073d0
+2018-01-16 09:51:31,033 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AccountSummary.stage1
+2018-01-16 09:51:31,033 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SendNotifications
+2018-01-16 09:51:31,033 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7a2d0b8b
+2018-01-16 09:51:31,035 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SendNotifications.stage1
+2018-01-16 09:51:31,035 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CancelStock
+2018-01-16 09:51:31,035 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@67f8c6a3
+2018-01-16 09:51:31,037 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CancelStock.stage1
+2018-01-16 09:51:31,115 [WrapperListener_start_runner] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-01-16 09:51:31,130 [WrapperListener_start_runner] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360productcatalog.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360storesettings.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360utils.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigoware.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\prisa.xml'}]"
+2018-01-16 09:51:31,130 [WrapperListener_start_runner] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360productcatalog.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360storesettings.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360utils.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigoware.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\prisa.xml'}]"
+2018-01-16 09:51:31,130 [WrapperListener_start_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'bigoware-qa'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-16 09:51:31,134 [WrapperListener_start_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-16 09:51:31,134 [WrapperListener_start_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-16 09:51:31,248 [WrapperListener_start_runner] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9000/rest/v1
+2018-01-16 09:51:31,279 [WrapperListener_start_runner] INFO  org.mule.module.s3.generated.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (1) used in this application 
+Salesforce 8.1.0 (DevKit     +
++ 3.9.0 Build UNNAMED.2793.f49b6c7)+
+                                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-16 09:51:31,286 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-16 09:51:31,294 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CreateOrder
+2018-01-16 09:51:31,296 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CreateOrder.stage1
+2018-01-16 09:51:31,303 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CreateCase
+2018-01-16 09:51:31,303 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CreateCase.stage1
+2018-01-16 09:51:31,307 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncProductCatalog
+2018-01-16 09:51:31,307 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncProductCatalog.stage1
+2018-01-16 09:51:31,312 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1023719854
+2018-01-16 09:51:31,313 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1794684541
+2018-01-16 09:51:31,313 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.829721191
+2018-01-16 09:51:31,315 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncProducts
+2018-01-16 09:51:31,315 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncProducts.stage1
+2018-01-16 09:51:31,320 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncAccounts
+2018-01-16 09:51:31,320 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncAccounts.stage1
+2018-01-16 09:51:31,321 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncUsers
+2018-01-16 09:51:31,321 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncUsers.stage1
+2018-01-16 09:51:31,323 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1295669477
+2018-01-16 09:51:31,324 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncStoreSettings
+2018-01-16 09:51:31,324 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncStoreSettings.stage1
+2018-01-16 09:51:31,324 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.973840756
+2018-01-16 09:51:31,324 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.681245199
+2018-01-16 09:51:31,324 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1548398318
+2018-01-16 09:51:31,325 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ContinueSyncProducts
+2018-01-16 09:51:31,325 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ContinueSyncProducts.stage1
+2018-01-16 09:51:31,326 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.757880000
+2018-01-16 09:51:31,327 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncPriceBooks
+2018-01-16 09:51:31,327 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncPriceBooks.stage1
+2018-01-16 09:51:31,328 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncFTPServer
+2018-01-16 09:51:31,329 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncFTPServer.stage1
+2018-01-16 09:51:31,330 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: Prueba
+2018-01-16 09:51:31,330 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: Prueba.stage1
+2018-01-16 09:51:31,331 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SendERPOrder
+2018-01-16 09:51:31,331 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SendERPOrder.stage1
+2018-01-16 09:51:31,332 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetStockFromProtheus
+2018-01-16 09:51:31,332 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetStockFromProtheus.stage1
+2018-01-16 09:51:31,333 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ReserveStockInProtheus
+2018-01-16 09:51:31,333 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ReserveStockInProtheus.stage1
+2018-01-16 09:51:31,335 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CreateBackOrderInProtheus
+2018-01-16 09:51:31,335 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CreateBackOrderInProtheus.stage1
+2018-01-16 09:51:31,336 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncCaseCategories
+2018-01-16 09:51:31,336 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncCaseCategories.stage1
+2018-01-16 09:51:31,337 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: OrderHistory
+2018-01-16 09:51:31,337 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: OrderHistory.stage1
+2018-01-16 09:51:31,338 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AccountSummary
+2018-01-16 09:51:31,338 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AccountSummary.stage1
+2018-01-16 09:51:31,340 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SendNotifications
+2018-01-16 09:51:31,340 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SendNotifications.stage1
+2018-01-16 09:51:31,341 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CancelStock
+2018-01-16 09:51:31,341 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CancelStock.stage1
+2018-01-16 09:51:36,272 [WrapperListener_start_runner] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: bigoware-qa                                           *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager: Mule PID #0, Wrapper PID #17008                 *
+**********************************************************************
+2018-01-16 09:52:13,791 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  com.bigo.salesforce.SalesforceConnector - Auth EndPoint: https://test.salesforce.com/services/Soap/c/42.0/0DF2C0000004CNZ
+2018-01-16 09:52:13,791 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  com.bigo.salesforce.SalesforceConnector - Service EndPoint: https://bigo360-commerce--QA.cs59.my.salesforce.com/services/Soap/c/42.0/00D2C0000000xLY/0DF2C0000004CNZ
+2018-01-16 09:52:13,791 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  com.bigo.salesforce.SalesforceConnector - Username: integracion@prisa.mx.qa
+2018-01-16 09:52:13,791 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  com.bigo.salesforce.SalesforceConnector - SessionId: 00D2C0000000xLY!AQ8AQEaYfgOqFLucnijWjuEeZw6NVBAv9l69m6IRKdBRiEHm4QwFiulrYCl8KgMhpnQls8jUUahadPXO0rgZo7o2zMdiMlmx
+2018-01-16 09:52:14,916 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Imagenes de productos
+2018-01-16 09:52:23,634 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  com.bigo.sync.commands.impl.ProductImageSyncCommand - Convert done!
+2018-01-16 09:52:34,323 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] WARN  org.apache.http.client.protocol.ResponseProcessCookies - Invalid cookie header: "Set-Cookie: guest_token=InJEVWFRa3o4S1lEWG9PWHBaNXFmTmcxNTE2MTE3OTQ4MzM4Ig%3D%3D--085f27aacaf17501fbcc22bcabe740d4c87ad5e5; path=/; expires=Sat, 16 Jan 2038 15:52:28 -0000". Invalid 'expires' attribute: Sat, 16 Jan 2038 15:52:28 -0000
+2018-01-16 09:52:34,324 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  com.bigo.sync.commands.impl.ProductImageSyncCommand - {"id":664,"position":4,"attachment_content_type":"image/jpeg","attachment_file_name":"water_v1.jpg","type":"Bigo::Image","attachment_updated_at":"2018-01-16T09:52:28.438-06:00","attachment_width":3840,"attachment_height":2160,"alt":"","viewable_type":"Bigo::Variant","viewable_id":2,"mini_url":"https://bucketeer-dd1dd069-4c0d-4911-a10f-5b5437ef4596.s3.amazonaws.com/bigo/images/664/mini/water_v1.jpg?1516117948","small_url":"https://bucketeer-dd1dd069-4c0d-4911-a10f-5b5437ef4596.s3.amazonaws.com/bigo/images/664/small/water_v1.jpg?1516117948","product_url":"https://bucketeer-dd1dd069-4c0d-4911-a10f-5b5437ef4596.s3.amazonaws.com/bigo/images/664/product/water_v1.jpg?1516117948","large_url":"https://bucketeer-dd1dd069-4c0d-4911-a10f-5b5437ef4596.s3.amazonaws.com/bigo/images/664/large/water_v1.jpg?1516117948"}
+2018-01-16 09:52:38,949 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  com.bigo.sync.commands.impl.ProductImageSyncCommand - Convert done!
+2018-01-16 09:52:48,313 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] WARN  org.apache.http.client.protocol.ResponseProcessCookies - Invalid cookie header: "Set-Cookie: guest_token=Im10MjN5TWFCNmo4SnNlMHI4NFB5dncxNTE2MTE3OTYzNDcxIg%3D%3D--a08f8a05c1204210de384351467e9a8379af48b9; path=/; expires=Sat, 16 Jan 2038 15:52:43 -0000". Invalid 'expires' attribute: Sat, 16 Jan 2038 15:52:43 -0000
+2018-01-16 09:52:48,314 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  com.bigo.sync.commands.impl.ProductImageSyncCommand - {"id":665,"position":5,"attachment_content_type":"image/jpeg","attachment_file_name":"water_v2.jpg","type":"Bigo::Image","attachment_updated_at":"2018-01-16T09:52:43.562-06:00","attachment_width":3840,"attachment_height":2160,"alt":"","viewable_type":"Bigo::Variant","viewable_id":2,"mini_url":"https://bucketeer-dd1dd069-4c0d-4911-a10f-5b5437ef4596.s3.amazonaws.com/bigo/images/665/mini/water_v2.jpg?1516117963","small_url":"https://bucketeer-dd1dd069-4c0d-4911-a10f-5b5437ef4596.s3.amazonaws.com/bigo/images/665/small/water_v2.jpg?1516117963","product_url":"https://bucketeer-dd1dd069-4c0d-4911-a10f-5b5437ef4596.s3.amazonaws.com/bigo/images/665/product/water_v2.jpg?1516117963","large_url":"https://bucketeer-dd1dd069-4c0d-4911-a10f-5b5437ef4596.s3.amazonaws.com/bigo/images/665/large/water_v2.jpg?1516117963"}
+2018-01-16 09:52:50,623 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {"product_properties":[]}
+2018-01-16 09:52:50,623 [[bigoware-qa].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Product Properties are null
+2018-01-16 09:56:19,344 [WrapperListener_stop_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'bigoware-qa'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-16 09:56:19,349 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CreateOrder
+2018-01-16 09:56:19,351 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CreateOrder.stage1
+2018-01-16 09:56:19,478 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CreateCase
+2018-01-16 09:56:19,478 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CreateCase.stage1
+2018-01-16 09:56:19,679 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncProductCatalog
+2018-01-16 09:56:19,679 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncProductCatalog.stage1
+2018-01-16 09:56:19,879 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1023719854
+2018-01-16 09:56:19,879 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1794684541
+2018-01-16 09:56:19,879 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.829721191
+2018-01-16 09:56:19,879 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncProducts
+2018-01-16 09:56:19,879 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncProducts.stage1
+2018-01-16 09:56:20,080 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncAccounts
+2018-01-16 09:56:20,080 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncAccounts.stage1
+2018-01-16 09:56:20,280 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncUsers
+2018-01-16 09:56:20,280 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncUsers.stage1
+2018-01-16 09:56:20,481 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1295669477
+2018-01-16 09:56:20,481 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncStoreSettings
+2018-01-16 09:56:20,481 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncStoreSettings.stage1
+2018-01-16 09:56:20,682 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.973840756
+2018-01-16 09:56:20,682 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.681245199
+2018-01-16 09:56:20,682 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1548398318
+2018-01-16 09:56:20,682 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ContinueSyncProducts
+2018-01-16 09:56:20,682 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ContinueSyncProducts.stage1
+2018-01-16 09:56:20,882 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.757880000
+2018-01-16 09:56:20,882 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncPriceBooks
+2018-01-16 09:56:20,882 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncPriceBooks.stage1
+2018-01-16 09:56:21,083 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncFTPServer
+2018-01-16 09:56:21,083 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncFTPServer.stage1
+2018-01-16 09:56:21,283 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: Prueba
+2018-01-16 09:56:21,283 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: Prueba.stage1
+2018-01-16 09:56:21,484 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SendERPOrder
+2018-01-16 09:56:21,484 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SendERPOrder.stage1
+2018-01-16 09:56:21,684 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: GetStockFromProtheus
+2018-01-16 09:56:21,684 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: GetStockFromProtheus.stage1
+2018-01-16 09:56:21,885 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ReserveStockInProtheus
+2018-01-16 09:56:21,885 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ReserveStockInProtheus.stage1
+2018-01-16 09:56:22,085 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CreateBackOrderInProtheus
+2018-01-16 09:56:22,085 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CreateBackOrderInProtheus.stage1
+2018-01-16 09:56:22,286 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncCaseCategories
+2018-01-16 09:56:22,286 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncCaseCategories.stage1
+2018-01-16 09:56:22,487 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: OrderHistory
+2018-01-16 09:56:22,487 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: OrderHistory.stage1
+2018-01-16 09:56:22,686 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: AccountSummary
+2018-01-16 09:56:22,686 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: AccountSummary.stage1
+2018-01-16 09:56:22,887 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SendNotifications
+2018-01-16 09:56:22,887 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SendNotifications.stage1
+2018-01-16 09:56:23,087 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CancelStock
+2018-01-16 09:56:23,087 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CancelStock.stage1
+2018-01-16 09:56:23,289 [WrapperListener_stop_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-16 09:56:23,302 [WrapperListener_stop_runner] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9000/rest/v1
+2018-01-16 09:56:23,308 [WrapperListener_stop_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-16 09:56:23,308 [WrapperListener_stop_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-16 09:56:23,323 [WrapperListener_stop_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'bigoware-qa'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-16 09:56:23,323 [WrapperListener_stop_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-16 09:56:23,325 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CreateOrder
+2018-01-16 09:56:23,325 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CreateOrder.stage1
+2018-01-16 09:56:23,325 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CreateCase
+2018-01-16 09:56:23,325 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CreateCase.stage1
+2018-01-16 09:56:23,325 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncProductCatalog
+2018-01-16 09:56:23,325 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncProductCatalog.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1023719854
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1794684541
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.829721191
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncProducts
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncProducts.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncAccounts
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncAccounts.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncUsers
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncUsers.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1295669477
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncStoreSettings
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncStoreSettings.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.973840756
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.681245199
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1548398318
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: ContinueSyncProducts
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: ContinueSyncProducts.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.757880000
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncPriceBooks
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncPriceBooks.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncFTPServer
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncFTPServer.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: Prueba
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: Prueba.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SendERPOrder
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SendERPOrder.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: GetStockFromProtheus
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: GetStockFromProtheus.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: ReserveStockInProtheus
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: ReserveStockInProtheus.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CreateBackOrderInProtheus
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CreateBackOrderInProtheus.stage1
+2018-01-16 09:56:23,326 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncCaseCategories
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncCaseCategories.stage1
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: OrderHistory
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: OrderHistory.stage1
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: AccountSummary
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: AccountSummary.stage1
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SendNotifications
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SendNotifications.stage1
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CancelStock
+2018-01-16 09:56:23,327 [WrapperListener_stop_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CancelStock.stage1
+2018-01-16 09:56:23,328 [WrapperListener_stop_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-16 09:56:23,340 [WrapperListener_stop_runner] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@457ac2aa: startup date [Tue Jan 16 09:51:23 CST 2018]; root of context hierarchy
+2018-01-16 09:56:23,358 [WrapperListener_stop_runner] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "bigoware-qa" shut down normally on: 1/16/18 9:56 AM   *
+* Up for: 0 days, 0 hours, 4 mins, 52.227 sec                        *
+**********************************************************************
+2018-03-13 10:50:36,157 [WrapperListener_start_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'bigoware-qa'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-13 10:50:36,406 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-03-13 10:50:36,564 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-03-13 10:50:36,706 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-03-13 10:50:36,706 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-03-13 10:50:36,801 [WrapperListener_start_runner] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@167a512a: startup date [Tue Mar 13 10:50:36 CST 2018]; root of context hierarchy
+2018-03-13 10:50:38,441 [WrapperListener_start_runner] WARN  org.mule.transport.http.builder.HttpHeaderDefinitionParser - Schema warning: Use of element <header> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2018-03-13 10:50:38,830 [WrapperListener_start_runner] INFO  org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 4.0.4.RELEASE
+2018-03-13 10:50:38,836 [WrapperListener_start_runner] WARN  org.springframework.security.core.SpringSecurityCoreVersion - **** You are advised to use Spring 4.2.5.RELEASE or later with this version. You are running: 4.1.9.RELEASE
+2018-03-13 10:50:38,837 [WrapperListener_start_runner] INFO  org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 4.0.4.RELEASE
+2018-03-13 10:50:38,900 [WrapperListener_start_runner] WARN  org.mule.config.spring.util.SpringXMLUtils - Id (_muleSecurityManager) and name (security-manager) differ for mule-ss:security-manager{name=Spring Security Provider, id=_muleSecurityManager, name=security-manager}
+2018-03-13 10:50:38,911 [WrapperListener_start_runner] WARN  org.mule.config.spring.parsers.specific.SecurityFilterDefinitionParser - Schema warning: Use of element <basic-security-filter> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2018-03-13 10:50:39,977 [WrapperListener_start_runner] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-13 10:50:41,021 [WrapperListener_start_runner] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+2018-03-13 10:50:42,078 [WrapperListener_start_runner] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-03-13 10:50:42,679 [WrapperListener_start_runner] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\bigoware-qa\queue-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\bigoware-qa\queue-tx-log\tx2.log
+2018-03-13 10:50:42,688 [WrapperListener_start_runner] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\bigoware-qa\queue-xa-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\bigoware-qa\queue-xa-tx-log\tx2.log
+2018-03-13 10:50:42,727 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-03-13 10:50:42,731 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CreateOrder
+2018-03-13 10:50:42,731 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@34dcde73
+2018-03-13 10:50:42,757 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CreateOrder.stage1
+2018-03-13 10:50:42,945 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CreateCase
+2018-03-13 10:50:42,945 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2b2b6749
+2018-03-13 10:50:42,948 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CreateCase.stage1
+2018-03-13 10:50:42,949 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncProductCatalog
+2018-03-13 10:50:42,949 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@20a9561
+2018-03-13 10:50:42,952 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncProductCatalog.stage1
+2018-03-13 10:50:42,952 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1112113448
+2018-03-13 10:50:43,316 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1537387655
+2018-03-13 10:50:43,335 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.952052848
+2018-03-13 10:50:43,359 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncProducts
+2018-03-13 10:50:43,359 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@b929837
+2018-03-13 10:50:43,361 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncProducts.stage1
+2018-03-13 10:50:43,363 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncAccounts
+2018-03-13 10:50:43,363 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@146ca29d
+2018-03-13 10:50:43,365 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncAccounts.stage1
+2018-03-13 10:50:43,367 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncUsers
+2018-03-13 10:50:43,367 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@fccc942
+2018-03-13 10:50:43,369 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncUsers.stage1
+2018-03-13 10:50:43,371 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1933211132
+2018-03-13 10:50:43,404 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncStoreSettings
+2018-03-13 10:50:43,405 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@34023fc4
+2018-03-13 10:50:43,407 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncStoreSettings.stage1
+2018-03-13 10:50:43,411 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.127842989
+2018-03-13 10:50:43,429 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1513827506
+2018-03-13 10:50:43,458 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.608345839
+2018-03-13 10:50:43,519 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ContinueSyncProducts
+2018-03-13 10:50:43,519 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@70c397a4
+2018-03-13 10:50:43,521 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ContinueSyncProducts.stage1
+2018-03-13 10:50:43,523 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1590142915
+2018-03-13 10:50:43,548 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncPriceBooks
+2018-03-13 10:50:43,548 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3b665781
+2018-03-13 10:50:43,551 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncPriceBooks.stage1
+2018-03-13 10:50:43,551 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncFTPServer
+2018-03-13 10:50:43,552 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3f606d
+2018-03-13 10:50:43,554 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncFTPServer.stage1
+2018-03-13 10:50:43,555 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: Prueba
+2018-03-13 10:50:43,555 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@53dc15e7
+2018-03-13 10:50:43,558 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: Prueba.stage1
+2018-03-13 10:50:43,559 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SendERPOrder
+2018-03-13 10:50:43,559 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4dd2145e
+2018-03-13 10:50:43,562 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SendERPOrder.stage1
+2018-03-13 10:50:43,562 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetStockFromProtheus
+2018-03-13 10:50:43,562 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5df04d4e
+2018-03-13 10:50:43,565 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetStockFromProtheus.stage1
+2018-03-13 10:50:43,566 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ReserveStockInProtheus
+2018-03-13 10:50:43,566 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@571e1c1c
+2018-03-13 10:50:43,568 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ReserveStockInProtheus.stage1
+2018-03-13 10:50:43,568 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CreateBackOrderInProtheus
+2018-03-13 10:50:43,568 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@de8dc9
+2018-03-13 10:50:43,571 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CreateBackOrderInProtheus.stage1
+2018-03-13 10:50:43,571 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SyncCaseCategories
+2018-03-13 10:50:43,571 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1c7338b
+2018-03-13 10:50:43,573 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SyncCaseCategories.stage1
+2018-03-13 10:50:43,573 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: OrderHistory
+2018-03-13 10:50:43,573 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4d704c00
+2018-03-13 10:50:43,575 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: OrderHistory.stage1
+2018-03-13 10:50:43,576 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AccountSummary
+2018-03-13 10:50:43,576 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@78773d64
+2018-03-13 10:50:43,578 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AccountSummary.stage1
+2018-03-13 10:50:43,578 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SendNotifications
+2018-03-13 10:50:43,578 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6a59c781
+2018-03-13 10:50:43,581 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SendNotifications.stage1
+2018-03-13 10:50:43,582 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CancelStock
+2018-03-13 10:50:43,582 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7776a906
+2018-03-13 10:50:43,585 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CancelStock.stage1
+2018-03-13 10:50:43,721 [WrapperListener_start_runner] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-03-13 10:50:43,729 [WrapperListener_start_runner] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360productcatalog.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360storesettings.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360utils.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigoware.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\prisa.xml'}]"
+2018-03-13 10:50:43,730 [WrapperListener_start_runner] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360productcatalog.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360storesettings.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigo360utils.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\bigoware.xml'}, ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\bigoware-qa\prisa.xml'}]"
+2018-03-13 10:50:43,731 [WrapperListener_start_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'bigoware-qa'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-13 10:50:43,736 [WrapperListener_start_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-03-13 10:50:43,736 [WrapperListener_start_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-03-13 10:50:43,804 [WrapperListener_start_runner] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9000/rest/v1
+2018-03-13 10:50:43,816 [WrapperListener_start_runner] INFO  org.mule.modules.salesforce.generated.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (1) used in this application 
+Salesforce 8.1.0 (DevKit     +
++ 3.9.0 Build UNNAMED.2793.f49b6c7)+
+                                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-13 10:50:43,818 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-03-13 10:50:43,821 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CreateOrder
+2018-03-13 10:50:43,821 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CreateOrder.stage1
+2018-03-13 10:50:43,824 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CreateCase
+2018-03-13 10:50:43,824 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CreateCase.stage1
+2018-03-13 10:50:43,825 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncProductCatalog
+2018-03-13 10:50:43,825 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncProductCatalog.stage1
+2018-03-13 10:50:43,827 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1112113448
+2018-03-13 10:50:43,827 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1537387655
+2018-03-13 10:50:43,827 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.952052848
+2018-03-13 10:50:43,828 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncProducts
+2018-03-13 10:50:43,828 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncProducts.stage1
+2018-03-13 10:50:43,829 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncAccounts
+2018-03-13 10:50:43,829 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncAccounts.stage1
+2018-03-13 10:50:43,831 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncUsers
+2018-03-13 10:50:43,831 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncUsers.stage1
+2018-03-13 10:50:43,832 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1933211132
+2018-03-13 10:50:43,833 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncStoreSettings
+2018-03-13 10:50:43,833 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncStoreSettings.stage1
+2018-03-13 10:50:43,833 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.127842989
+2018-03-13 10:50:43,833 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1513827506
+2018-03-13 10:50:43,833 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.608345839
+2018-03-13 10:50:43,834 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ContinueSyncProducts
+2018-03-13 10:50:43,834 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ContinueSyncProducts.stage1
+2018-03-13 10:50:43,834 [WrapperListener_start_runner] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1590142915
+2018-03-13 10:50:43,836 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncPriceBooks
+2018-03-13 10:50:43,836 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncPriceBooks.stage1
+2018-03-13 10:50:43,837 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncFTPServer
+2018-03-13 10:50:43,837 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncFTPServer.stage1
+2018-03-13 10:50:43,838 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: Prueba
+2018-03-13 10:50:43,838 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: Prueba.stage1
+2018-03-13 10:50:43,839 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SendERPOrder
+2018-03-13 10:50:43,839 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SendERPOrder.stage1
+2018-03-13 10:50:43,840 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetStockFromProtheus
+2018-03-13 10:50:43,840 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetStockFromProtheus.stage1
+2018-03-13 10:50:43,841 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ReserveStockInProtheus
+2018-03-13 10:50:43,841 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ReserveStockInProtheus.stage1
+2018-03-13 10:50:43,842 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CreateBackOrderInProtheus
+2018-03-13 10:50:43,842 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CreateBackOrderInProtheus.stage1
+2018-03-13 10:50:43,843 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SyncCaseCategories
+2018-03-13 10:50:43,843 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SyncCaseCategories.stage1
+2018-03-13 10:50:43,844 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: OrderHistory
+2018-03-13 10:50:43,844 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: OrderHistory.stage1
+2018-03-13 10:50:43,846 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AccountSummary
+2018-03-13 10:50:43,846 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AccountSummary.stage1
+2018-03-13 10:50:43,847 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SendNotifications
+2018-03-13 10:50:43,847 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SendNotifications.stage1
+2018-03-13 10:50:43,848 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CancelStock
+2018-03-13 10:50:43,848 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CancelStock.stage1
+2018-03-13 10:50:48,754 [WrapperListener_start_runner] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: bigoware-qa                                           *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager: Mule PID #0, Wrapper PID #15328                 *
+**********************************************************************
+2018-03-13 10:50:54,433 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'bigoware-qa'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-13 10:50:54,436 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CreateOrder
+2018-03-13 10:50:54,437 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CreateOrder.stage1
+2018-03-13 10:50:54,470 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CreateCase
+2018-03-13 10:50:54,471 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CreateCase.stage1
+2018-03-13 10:50:54,645 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncProductCatalog
+2018-03-13 10:50:54,645 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncProductCatalog.stage1
+2018-03-13 10:50:54,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1112113448
+2018-03-13 10:50:54,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1537387655
+2018-03-13 10:50:54,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.952052848
+2018-03-13 10:50:54,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncProducts
+2018-03-13 10:50:54,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncProducts.stage1
+2018-03-13 10:50:54,850 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncAccounts
+2018-03-13 10:50:54,850 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncAccounts.stage1
+2018-03-13 10:50:55,051 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncUsers
+2018-03-13 10:50:55,051 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncUsers.stage1
+2018-03-13 10:50:55,252 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1933211132
+2018-03-13 10:50:55,252 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncStoreSettings
+2018-03-13 10:50:55,252 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncStoreSettings.stage1
+2018-03-13 10:50:55,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.127842989
+2018-03-13 10:50:55,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1513827506
+2018-03-13 10:50:55,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.608345839
+2018-03-13 10:50:55,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ContinueSyncProducts
+2018-03-13 10:50:55,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ContinueSyncProducts.stage1
+2018-03-13 10:50:55,256 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1590142915
+2018-03-13 10:50:55,257 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncPriceBooks
+2018-03-13 10:50:55,257 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncPriceBooks.stage1
+2018-03-13 10:50:55,457 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncFTPServer
+2018-03-13 10:50:55,458 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncFTPServer.stage1
+2018-03-13 10:50:55,659 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: Prueba
+2018-03-13 10:50:55,660 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: Prueba.stage1
+2018-03-13 10:50:55,860 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SendERPOrder
+2018-03-13 10:50:55,861 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SendERPOrder.stage1
+2018-03-13 10:50:56,060 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: GetStockFromProtheus
+2018-03-13 10:50:56,061 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: GetStockFromProtheus.stage1
+2018-03-13 10:50:56,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ReserveStockInProtheus
+2018-03-13 10:50:56,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ReserveStockInProtheus.stage1
+2018-03-13 10:50:56,266 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CreateBackOrderInProtheus
+2018-03-13 10:50:56,266 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CreateBackOrderInProtheus.stage1
+2018-03-13 10:50:56,465 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SyncCaseCategories
+2018-03-13 10:50:56,465 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SyncCaseCategories.stage1
+2018-03-13 10:50:56,466 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: OrderHistory
+2018-03-13 10:50:56,466 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: OrderHistory.stage1
+2018-03-13 10:50:56,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: AccountSummary
+2018-03-13 10:50:56,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: AccountSummary.stage1
+2018-03-13 10:50:56,669 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SendNotifications
+2018-03-13 10:50:56,669 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SendNotifications.stage1
+2018-03-13 10:50:56,869 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CancelStock
+2018-03-13 10:50:56,870 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CancelStock.stage1
+2018-03-13 10:50:56,875 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-03-13 10:50:57,008 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9000/rest/v1
+2018-03-13 10:50:57,011 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-03-13 10:50:57,011 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-03-13 10:50:57,028 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'bigoware-qa'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-13 10:50:57,028 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-03-13 10:50:57,030 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CreateOrder
+2018-03-13 10:50:57,030 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CreateOrder.stage1
+2018-03-13 10:50:57,033 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CreateCase
+2018-03-13 10:50:57,033 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CreateCase.stage1
+2018-03-13 10:50:57,033 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncProductCatalog
+2018-03-13 10:50:57,033 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncProductCatalog.stage1
+2018-03-13 10:50:57,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1112113448
+2018-03-13 10:50:57,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1537387655
+2018-03-13 10:50:57,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.952052848
+2018-03-13 10:50:57,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncProducts
+2018-03-13 10:50:57,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncProducts.stage1
+2018-03-13 10:50:57,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncAccounts
+2018-03-13 10:50:57,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncAccounts.stage1
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncUsers
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncUsers.stage1
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1933211132
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncStoreSettings
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncStoreSettings.stage1
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.127842989
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1513827506
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.608345839
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: ContinueSyncProducts
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: ContinueSyncProducts.stage1
+2018-03-13 10:50:57,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1590142915
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncPriceBooks
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncPriceBooks.stage1
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncFTPServer
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncFTPServer.stage1
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: Prueba
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: Prueba.stage1
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SendERPOrder
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SendERPOrder.stage1
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: GetStockFromProtheus
+2018-03-13 10:50:57,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: GetStockFromProtheus.stage1
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: ReserveStockInProtheus
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: ReserveStockInProtheus.stage1
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CreateBackOrderInProtheus
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CreateBackOrderInProtheus.stage1
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SyncCaseCategories
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SyncCaseCategories.stage1
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: OrderHistory
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: OrderHistory.stage1
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: AccountSummary
+2018-03-13 10:50:57,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: AccountSummary.stage1
+2018-03-13 10:50:57,038 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SendNotifications
+2018-03-13 10:50:57,038 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SendNotifications.stage1
+2018-03-13 10:50:57,038 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CancelStock
+2018-03-13 10:50:57,038 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CancelStock.stage1
+2018-03-13 10:50:57,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-03-13 10:50:57,207 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@167a512a: startup date [Tue Mar 13 10:50:36 CST 2018]; root of context hierarchy
+2018-03-13 10:50:57,248 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "bigoware-qa" shut down normally on: 3/13/18 10:50 AM  *
+* Up for: 0 days, 0 hours, 0 mins, 13.513 sec                        *
+**********************************************************************

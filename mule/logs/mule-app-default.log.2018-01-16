@@ -1,0 +1,50 @@
+INFO  2018-01-16 09:51:36,295 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'default'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-16 09:51:36,298 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2018-01-16 09:51:36,301 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2018-01-16 09:51:36,309 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2018-01-16 09:51:36,309 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.9)
+INFO  2018-01-16 09:51:36,310 [WrapperListener_start_runner] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@4b1fdf88: startup date [Tue Jan 16 09:51:36 CST 2018]; root of context hierarchy
+INFO  2018-01-16 09:51:36,497 [WrapperListener_start_runner] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2018-01-16 09:51:36,585 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\default\queue-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\default\queue-tx-log\tx2.log
+INFO  2018-01-16 09:51:36,587 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\default\queue-xa-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\default\queue-xa-tx-log\tx2.log
+INFO  2018-01-16 09:51:36,591 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2018-01-16 09:51:36,600 [WrapperListener_start_runner] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\default\mule-config.xml'}]"
+INFO  2018-01-16 09:51:36,600 [WrapperListener_start_runner] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\default\mule-config.xml'}]"
+INFO  2018-01-16 09:51:36,600 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'default'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-16 09:51:36,601 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2018-01-16 09:51:36,601 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2018-01-16 09:51:36,618 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2018-01-16 09:51:36,622 [WrapperListener_start_runner] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: default                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager: Mule PID #0, Wrapper PID #17008                 *
+**********************************************************************
+INFO  2018-01-16 09:56:19,183 [WrapperListener_stop_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'default'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-16 09:56:19,184 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2018-01-16 09:56:19,185 [WrapperListener_stop_runner] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2018-01-16 09:56:19,185 [WrapperListener_stop_runner] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2018-01-16 09:56:19,187 [WrapperListener_stop_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'default'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-16 09:56:19,188 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2018-01-16 09:56:19,188 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2018-01-16 09:56:19,291 [WrapperListener_stop_runner] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@4b1fdf88: startup date [Tue Jan 16 09:51:36 CST 2018]; root of context hierarchy
+INFO  2018-01-16 09:56:19,312 [WrapperListener_stop_runner] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "default" shut down normally on: 1/16/18 9:56 AM       *
+* Up for: 0 days, 0 hours, 4 mins, 42.701 sec                        *
+**********************************************************************

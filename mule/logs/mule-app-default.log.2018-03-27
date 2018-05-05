@@ -1,0 +1,63 @@
+INFO  2018-03-27 18:58:18,411 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'default'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-03-27 18:58:18,415 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2018-03-27 18:58:18,419 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2018-03-27 18:58:18,430 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2018-03-27 18:58:18,430 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.9)
+INFO  2018-03-27 18:58:18,432 [WrapperListener_start_runner] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@5dacebd: startup date [Tue Mar 27 18:58:18 CST 2018]; root of context hierarchy
+INFO  2018-03-27 18:58:18,657 [WrapperListener_start_runner] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2018-03-27 18:58:18,752 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\default\queue-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\default\queue-tx-log\tx2.log
+INFO  2018-03-27 18:58:18,753 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\default\queue-xa-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\default\queue-xa-tx-log\tx2.log
+INFO  2018-03-27 18:58:18,757 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2018-03-27 18:58:18,767 [WrapperListener_start_runner] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\default\mule-config.xml'}]"
+INFO  2018-03-27 18:58:18,767 [WrapperListener_start_runner] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\default\mule-config.xml'}]"
+INFO  2018-03-27 18:58:18,768 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'default'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-03-27 18:58:18,768 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2018-03-27 18:58:18,768 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2018-03-27 18:58:18,781 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2018-03-27 18:58:18,788 [WrapperListener_start_runner] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: default                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager: Mule PID #0, Wrapper PID #4312                  *
+**********************************************************************
+INFO  2018-03-27 19:33:12,941 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'default'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-03-27 19:33:12,945 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2018-03-27 19:33:12,950 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2018-03-27 19:33:12,968 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2018-03-27 19:33:12,968 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.9)
+INFO  2018-03-27 19:33:12,970 [WrapperListener_start_runner] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@63f3b64: startup date [Tue Mar 27 19:33:12 CST 2018]; root of context hierarchy
+INFO  2018-03-27 19:33:13,396 [WrapperListener_start_runner] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2018-03-27 19:33:14,140 [WrapperListener_start_runner] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2018-03-27 19:33:14,285 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\default\queue-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\default\queue-tx-log\tx2.log
+INFO  2018-03-27 19:33:14,302 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\mule-standalone-3.9.0\.\.mule\default\queue-xa-tx-log\tx1.log and C:\mule-standalone-3.9.0\.\.mule\default\queue-xa-tx-log\tx2.log
+INFO  2018-03-27 19:33:14,336 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2018-03-27 19:33:14,715 [WrapperListener_start_runner] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\default\mule-config.xml'}]"
+INFO  2018-03-27 19:33:14,715 [WrapperListener_start_runner] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\mule-standalone-3.9.0\apps\default\mule-config.xml'}]"
+INFO  2018-03-27 19:33:14,716 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'default'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-03-27 19:33:14,717 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2018-03-27 19:33:14,717 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2018-03-27 19:33:14,743 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2018-03-27 19:33:19,296 [WrapperListener_start_runner] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: default                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager: Mule PID #0, Wrapper PID #13804                 *
+**********************************************************************

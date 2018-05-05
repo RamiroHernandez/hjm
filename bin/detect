@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -e "$1/pom.xml" ] ; then
+	echo "Java Application"
+	exit 0
+else
+	exit 1
+fi
