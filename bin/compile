@@ -66,7 +66,10 @@ if [ ! -d mule ]; then
   curl --silent --location $MULE_URL | tar xz
   mv mule-standalone-${MULE_V} $BUILD_DIR/mule
   rm -rf $BUILD_DIR/mule/apps/*
-  chmod +x $BUILD_DIR/mule/bin/*.sh
+  chmod +x $BUILD_DIR/mule/bin/mule
+  chmod +x $BUILD_DIR/mule/bin/additional.groovy
+  chmod +x $BUILD_DIR/mule/bin/launcher
+  chmod +x $BUILD_DIR/mule/lib/boot/exec/wrapper*
   echo " done"
 else
   echo "-----> Mule already present"
