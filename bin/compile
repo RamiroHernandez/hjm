@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# bin/compile <build-dir> <cache-dir>
+# bin/compile <build-dir> <cache-dir> <env-dir>
 
 # fail fast
 set -e
@@ -24,6 +24,11 @@ install_jdk ${BUILD_DIR}
 
 run_mvn "compile" $BUILD_DIR $CACHE_DIR
 
+if has_maven_wrapper $BUILD_DIR; then
+  cache_copy ".m2/wrapper" $BUILD_DIR $CACHE_DIR
+  rm -rf $BUILD_DIR/.m2
+fi
+
 MULE_V="3.9.0"
 MULE_URL="https://repository-master.mulesoft.org/nexus/service/local/repositories/releases/content/org/mule/distributions/mule-standalone/${MULE_V}/mule-standalone-${MULE_V}.tar.gz"
 if [ ! -d mule ]; then
@@ -39,10 +44,3 @@ if [ ! -d mule ]; then
 else
   echo "-----> Mule already present"
 fi
-
-if has_maven_wrapper $BUILD_DIR; then
-  cache_copy ".m2/wrapper" $BUILD_DIR $CACHE_DIR
-  rm -rf $BUILD_DIR/.m2
-fi
-
-logger -p user.notice -t "slugc[$$]" "language_pack_java java_compile_end $LOGGER_FLAGS"
